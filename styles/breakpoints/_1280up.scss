@@ -1,0 +1,76 @@
+.hero-five{
+  display: none;
+}
+
+.hero-five-pc{
+  display: block;
+  position: relative;
+  top:700px;
+  height:1000px;
+
+ .swiper-sub {
+  position: relative;
+  top:30px;
+  overflow: hidden;
+
+  .swiper-slide{
+    height:270px;  
+    // overflow: hidden;
+    
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 1;
+      display:block;
+      background-color:rgba(128,128,128,0.55);
+      height:250px;
+     }
+
+    & img{
+     width: 450px;
+     height:250px;
+ 
+     object-fit: cover;
+    }
+ 
+    & h3{
+     position: absolute;
+     top:50px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     color:white;
+     font-size: 15px;
+     z-index: 100;
+     text-align: center;
+     width:250px;
+    }
+    & p{
+     position: absolute;
+     top:130px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     color:white;
+     font-size: 13px;
+     z-index: 100;
+     width:210px;
+
+    }
+  }
+ }
+}
+
+
+
+
+
+
+// position: absolute;
+// top:50%;
+// left:50%;
+// transform: translate(-50%,-50%);
+
+// font-family: 'Noto Serif JP', serif;
